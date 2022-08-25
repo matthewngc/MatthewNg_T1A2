@@ -6,12 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-#homepage {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
 header {
     background-color: rgb(29, 23, 23);
     display: flex;
@@ -19,7 +13,6 @@ header {
     align-items: center;
     padding: 1rem;
 }
-
 #logo {
     height: 7vh;
     border-radius: 50%;
@@ -45,54 +38,7 @@ section {
     padding: 2rem;
     background: url('/images/wallpaper.jpg') center;
     background-size: cover;
-}
-
-#index {
-    height: 90vh;
-}
-
-#nametag {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    background: rgba(107, 87, 196, 0.582);
-    padding: 1rem;
-    transition: 1s;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-}
-
-#nametag:hover {
-    transform: scale(1.125);
-    box-shadow: 4px 4px 4px;
-    transition: 1s;
-}
-
-#nametag h1 {
-    font-size: 3rem;
-}
-
-#nametag h2, h3, h5 {
-    font-weight: lighter;
-}
-
-#portrait {
-    height: 30vh;
-    border-radius: 50%;
-    margin: 2rem;
-}
-
-#social a {
-    margin: 0 0.5rem;
-}
-
-#social a:hover, nav a:hover {
-    display: inline-block;
-    transform: scale(1.125);
-    transition: 1s;
+    /* height: 90vh; */
 }
 
 footer {
