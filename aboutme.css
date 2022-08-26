@@ -13,6 +13,7 @@ header {
     align-items: center;
     padding: 1rem;
 }
+
 #logo {
     height: 7vh;
     border-radius: 50%;
@@ -25,24 +26,28 @@ nav a {
 }
 
 html {
-    background: black;
+    background: url('/images/wallpaper.jpg') center;
     font-family: 'Quicksand', sans-serif;
     color: white;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
-    background: url('/images/wallpaper.jpg') center;
-    background-size: cover;
-    /* height: 90vh; */
 }
 
 footer {
     color: white;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,11 +64,9 @@ footer {
     border: 2px solid white;
     border-radius: 10px;
     padding: 2rem;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin:auto;
-    height: auto;
+    justify-content: space-between; */
 }
 
 #aboutme h3 {
@@ -71,6 +74,16 @@ footer {
     font-weight: bold;
 }
 
+article h1 {
+    padding: 1rem;
+}
+
 #journey, #work, #hobbies {
     margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        height: 100vh;
+    }
 }

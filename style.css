@@ -1,16 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Global */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+body {
+    height: 100%;
+}
 
-#homepage {
+html {
+    background: url('/images/wallpaper.jpg') center;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+section {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
 }
+
+/* Nav Bar */
 
 header {
     background-color: rgb(29, 23, 23);
@@ -31,25 +47,19 @@ nav a {
     margin: 0 0.5rem;
 }
 
-html {
-    background: black;
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-}
+/* Homepage */
 
-section {
+#homepage {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2rem;
-    background: url('/images/wallpaper.jpg') center;
-    background-size: cover;
+    height: 100vh;
 }
 
 #index {
     height: 90vh;
 }
+
+/* Nametag portrait on Homepage */
 
 #nametag {
     display: flex;
@@ -63,12 +73,6 @@ section {
     transition: 1s;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-}
-
-#nametag:hover {
-    transform: scale(1.125);
-    box-shadow: 4px 4px 4px;
-    transition: 1s;
 }
 
 #nametag h1 {
@@ -85,6 +89,15 @@ section {
     margin: 2rem;
 }
 
+/* Hover animation on nametag */
+#nametag:hover {
+    transform: scale(1.125);
+    box-shadow: 4px 4px 4px;
+    transition: 1s;
+}
+
+/* Social Links */
+
 #social a {
     margin: 0 0.5rem;
 }
@@ -95,18 +108,20 @@ section {
     transition: 1s;
 }
 
+/* Footer */
 footer {
     color: white;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+    margin-top: auto;
 }
 
-#resume {
-    text-decoration: underline;
-    color: white;
-}
+
+/* About me page */
+
 
 #aboutme {
     background-color: rgba(107, 87, 196, 0.582);
@@ -127,4 +142,30 @@ footer {
 
 #journey, #work, #hobbies {
     margin: 1rem 0;
+}
+
+#resume {
+    text-decoration: underline;
+    color: white;
+}
+
+/* About me article */
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+/* Media breakpoint*/
+@media screen and (min-width: 768px) {
+    section {
+        height: 100vh;
+    }
 }
