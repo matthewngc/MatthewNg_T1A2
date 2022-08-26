@@ -37,13 +37,13 @@ article {
     align-items: center;
 }
 
-section {
+/* section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-}
+} */
 
 footer {
     color: white;
@@ -52,6 +52,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+    margin-top: auto;
 }
 
 #resume {
@@ -86,4 +87,10 @@ article h1 {
     section {
         height: 100vh;
     }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
