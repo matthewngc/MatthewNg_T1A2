@@ -101,14 +101,14 @@ nav a {
 /* Social Links */
 
 #social a {
-    margin: -0.25rem;
-    transition: 1s;
+    margin: -0.75rem;
 }
 
 #social a:hover, nav a:hover {
     display: inline-block;
     transform: scale(1.125);
-    transition: 1s;
+    transition: 0.5s;
+    color: rgb(174, 174, 236);
 }
 
 /* Footer */
