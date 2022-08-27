@@ -171,7 +171,7 @@ footer {
 
 /* Media breakpoint*/
 @media screen and (min-width: 768px) {
-    section {
+    #aboutme_page {
         height: 100vh;
     }
 }
@@ -257,8 +257,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width: 20rem; */
-        /* height: auto; */
         flex: 1 1 30%;
         margin: 1rem;        
     }
@@ -307,6 +305,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     height: 100vh;
+    margin-top: 1rem;
 }
 
 #blog_page h1 {
@@ -351,7 +350,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        margin: 1.5rem;
+        /* margin: 1.5rem; */
     }
 
     .blog_article {
@@ -382,3 +381,65 @@ footer {
     }
 }
 
+/* Blog Posts */
+
+.blog_post {
+    border: 2px solid white;
+    border-radius: 10px;
+    background:rgba(107, 87, 196, 0.582);
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.blog_post_pic {
+    height:auto;
+    width: 25rem;
+    margin-bottom: 1rem;
+}
+
+.blog_sidebar {
+    padding:0;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.blog_sidebar h2 {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .blog_post {
+        display:flex;
+        flex-direction: row;
+    }
+    .blog_sidebar {
+        width: 200vh;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 6px 0 6px rgb(195, 139, 218);
+    }
+    .blog_content {
+        font-size: 1.2rem;
+    }
+    .blog_post_pic {
+        width: 100%;
+        align-self: flex-start;
+    }
+    .blog_body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .blog_footer {
+        margin-top: 0;
+    }
+}
