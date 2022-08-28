@@ -144,7 +144,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:auto;
+    margin: auto;
     height: auto;
 }
 
@@ -176,8 +176,10 @@ footer {
 
 #aboutme_page h1 {
     padding: 1rem;
+    margin-top: 1rem;
     font-size: 3rem;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 /* Media breakpoint*/
