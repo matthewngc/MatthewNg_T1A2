@@ -14,7 +14,7 @@ body {
 }
 
 html {
-    background: url('/images/wallpaper.jpg') center;
+    background: url('images/wallpaper.jpg') center;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
     color: white;
@@ -74,7 +74,8 @@ nav a {
     padding: 1rem;
     transition: 1s;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
+    animation: 3s ease 0s normal forwards 1 fadeIn;
+    /* animation-fill-mode: forwards; */
 }
 
 #nametag h1 {
@@ -97,6 +98,13 @@ nav a {
     transform: scale(1.125);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.493);
     transition: 1s;
+}
+
+/* Fade in animation on nametag */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    20% {opacity: 0;}
+    100% {opactiy: 1;}
 }
 
 /* Social Links */
